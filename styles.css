@@ -112,20 +112,23 @@ h2 { margin: 0; font: 400 clamp(2.5rem, 4.5vw, 4.6rem)/.98 var(--serif); letter-
   .site-footer p:nth-child(2) { display: none; }
 }
 
+@media (max-width: 700px) {
+  .conference { display: block; padding-top: 3rem; padding-bottom: 3rem; }
+  .conference__copy { padding: 0; }
+  .conference h1 { max-width: 8ch; font-size: clamp(3.8rem, 14vw, 4.8rem); white-space: normal; }
+  .conference-subtitle { max-width: 14ch; margin-top: .9rem; font-size: 1.75rem; }
+  .event-bar { margin-top: 2rem; }
+  .event-fact, .event-contact { min-height: auto; padding: 0; }
+  .conference__art { width: 72%; max-width: 17rem; margin: 2.75rem auto 1.35rem; justify-self: auto; }
+  .conference__art::after { inset: 1.4rem -1.35rem -1.35rem 1.1rem; }
+}
+
 @media (max-width: 560px) {
   .site-header { min-height: 4.8rem; }
   .wordmark { gap: 0; }
   .wordmark img { width: 9.5rem; }
   .wordmark__secondary { display: none; }
   .menu-toggle__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
-  .conference { display: block; padding-top: 3rem; padding-bottom: 3rem; }
-  .conference__copy { padding: 0; }
-  .conference h1 { max-width: 8ch; font-size: clamp(3.8rem, 17vw, 4.8rem); white-space: normal; }
-  .conference-subtitle { max-width: 14ch; margin-top: .9rem; font-size: 1.75rem; }
-  .conference__art { width: 72%; max-width: 17rem; margin: 2.75rem auto 1.35rem; }
-  .conference__art::after { inset: 1.4rem -1.35rem -1.35rem 1.1rem; }
-  .event-bar { margin-top: 2rem; }
-  .event-fact, .event-contact { min-height: auto; padding: 0; }
   .call__body { columns: 1; }
   .call__body p + p { margin-top: 1.2rem; }
   .call__heading h2, .section-title-row h2 { font-size: clamp(2.2rem, 10vw, 3rem); }
