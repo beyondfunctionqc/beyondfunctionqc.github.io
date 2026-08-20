@@ -117,11 +117,13 @@ h2 { margin: 0; font: 400 clamp(2.5rem, 4.5vw, 4.6rem)/.98 var(--serif); letter-
 
 @media (max-width: 960px) {
   .conference { display: block; padding-top: 3rem; padding-bottom: 3rem; }
+  .conference__content { text-align: center; }
   .conference__copy { padding: 0; }
   .conference h1 { font-size: clamp(3.8rem, 10vw, 4.8rem); white-space: normal; }
-  .conference-subtitle { max-width: 14ch; margin-top: .9rem; font-size: 1.75rem; }
-  .event-bar { margin-top: 2rem; }
+  .conference-subtitle { max-width: 14ch; margin: .9rem auto 0; font-size: 1.75rem; }
+  .event-bar { margin: 2rem auto 0; padding: 1.25rem 0 0; border-top: 3px solid var(--red); border-left: 0; text-align: center; }
   .event-fact, .event-contact { min-height: auto; padding: 0; }
+  .event-contact { justify-self: center; }
   .conference__art { width: 72%; max-width: 17rem; margin: 2.75rem auto 1.35rem; justify-self: auto; }
   .conference__art::after { inset: 1.4rem -1.35rem -1.35rem 1.1rem; }
 }
