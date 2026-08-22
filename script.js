@@ -27,6 +27,12 @@ menuButton.addEventListener('click', () => {
 navLinks.forEach((link) => link.addEventListener('click', closeMenu));
 backdrop.addEventListener('click', () => closeMenu({ restoreFocus: true }));
 
+document.addEventListener('click', (event) => {
+  if (menuButton.getAttribute('aria-expanded') === 'true' && !header.contains(event.target)) {
+    closeMenu();
+  }
+});
+
 window.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
     closeMenu({ restoreFocus: true });
