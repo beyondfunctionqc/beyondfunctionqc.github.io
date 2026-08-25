@@ -16,8 +16,10 @@
   --container-max: 80rem;
   --section-space: clamp(3.75rem, 6vw, 5.5rem);
   --header-height: 4.75rem;
-  --type-small: .82rem;
+  --type-small: .875rem;
   --type-body: 1.1rem;
+  --type-subtitle: clamp(1.45rem, 1.8vw, 1.65rem);
+  --type-section: clamp(2.5rem, 3vw, 3.25rem);
   --type-display: clamp(2.75rem, 4vw, 4rem);
 }
 
@@ -60,7 +62,7 @@ address { font-style: normal; }
 .conference__copy { display: flex; flex-direction: column; justify-content: center; padding: 2.5rem clamp(2rem, 4vw, 4.5rem) 2.5rem 0; }
 .conference-type, .section-index { margin: 0; color: var(--muted); font-size: var(--type-small); font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
 .conference h1 { max-width: 7.5ch; margin: 1rem 0 0; font: 400 var(--type-display)/.94 var(--serif); letter-spacing: -.05em; }
-.conference-subtitle { max-width: 18ch; margin: 1.1rem 0 0; color: var(--sage-dark); font: italic 400 var(--type-body)/1.35 var(--serif); }
+.conference-subtitle { max-width: 18ch; margin: 1.1rem 0 0; color: var(--sage-dark); font: italic 400 var(--type-subtitle)/1.2 var(--serif); }
 .event-details { margin-top: 2rem; padding-top: 1.55rem; border-top: 1px solid var(--sage); }
 .event-details p { margin: 0; }
 .event-date { font-size: var(--type-small); font-weight: 800; letter-spacing: .025em; text-transform: uppercase; }
@@ -75,7 +77,7 @@ address { font-style: normal; }
   border: 1px solid var(--line); border-left: .35rem solid var(--sage); background: var(--surface);
 }
 .submission__intro { padding: .7rem clamp(1.5rem, 3vw, 2.75rem) .7rem 0; border-right: 1px solid var(--line); }
-.submission h2 { margin: .4rem 0 0; font: 400 var(--type-display)/1 var(--serif); letter-spacing: -.035em; }
+.submission h2 { margin: .4rem 0 0; font: 400 var(--type-section)/1 var(--serif); letter-spacing: -.035em; }
 .submission__intro > p:not(.section-index) { max-width: 34rem; margin: .7rem 0 0; font-size: var(--type-body); line-height: 1.5; }
 .details-link { display: inline-block; margin-top: .7rem; color: var(--ink); font-size: var(--type-body); font-weight: 600; text-decoration-color: var(--link-underline); text-decoration-thickness: 1px; text-underline-offset: .26em; }
 .details-link__ending { white-space: nowrap; }
@@ -94,7 +96,7 @@ address { font-style: normal; }
 
 /* Call for papers */
 .call { padding-top: var(--section-space); padding-bottom: var(--section-space); border-bottom: 1px solid var(--line); }
-.section-heading h2, .organizer h2 { margin: .8rem 0 0; font: 400 var(--type-display)/1 var(--serif); letter-spacing: -.04em; }
+.section-heading h2, .organizer h2 { margin: .8rem 0 0; font: 400 var(--type-section)/1 var(--serif); letter-spacing: -.04em; }
 .section-heading h2 { max-width: 15ch; }
 .call__body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 5vw, 5rem); margin-top: 2.15rem; }
 .call__body p { margin: 0; font-size: var(--type-body); line-height: 1.68; }
