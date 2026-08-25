@@ -106,7 +106,7 @@ address { font-style: normal; }
 .section-heading--wide h2 { max-width: none; }
 .section-heading--wide > p:last-child { max-width: 34rem; margin: 0 0 .35rem; color: var(--muted); font-size: var(--type-body); line-height: 1.55; }
 .topic-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 3rem; margin: 2rem 0 0; padding: 0; list-style: none; counter-reset: topic; }
-.topic-list li { position: relative; counter-increment: topic; min-height: 5.35rem; padding: 1.05rem .5rem 1.05rem 2.8rem; border-top: 1px solid var(--line); font: 400 var(--type-body)/1.48 var(--serif); }
+.topic-list li { position: relative; counter-increment: topic; min-height: 5.35rem; padding: 1.05rem .5rem 1.05rem 2.8rem; border-top: 1px solid var(--line); font: 400 var(--type-body)/1.55 var(--sans); }
 .topic-list li::before { position: absolute; top: 1.25rem; left: 0; color: var(--sage-dark); content: counter(topic, decimal-leading-zero); font: 800 var(--type-small)/1 var(--sans); letter-spacing: .05em; }
 
 .thinkers { margin-top: 1rem; padding-top: 1.25rem; padding-bottom: 1.25rem; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); }
