@@ -1,14 +1,14 @@
 :root {
   --ink: #1e1e1e;
   --muted: #62645f;
-  --paper: #ffffff;
-  --soft: #f6f7f7;
+  --paper: #f4ece3;
+  --soft: #e9e4dd;
   --sage: #8a927f;
   --sage-dark: #666d5e;
-  --line: #d9dcd6;
-  --line-dark: #a9ada5;
-  --surface: #fbfaf9;
-  --footer: #eeefed;
+  --line: #d2cdc4;
+  --line-dark: #a1a39b;
+  --surface: #ebe0d5;
+  --footer: #ebe0d5;
   --link-underline: #8d8f89;
   --serif: Georgia, "Times New Roman", serif;
   --sans: Arial, Helvetica, sans-serif;
@@ -38,12 +38,12 @@ address { font-style: normal; }
 /* Header and navigation */
 .site-header {
   position: sticky; z-index: 50; top: 0; display: flex; align-items: center; justify-content: space-between;
-  min-height: var(--header-height); padding: .45rem var(--gutter); border-bottom: 1px solid var(--line); background: rgb(255 255 255 / 96%);
+  min-height: var(--header-height); padding: .45rem var(--gutter); border-bottom: 1px solid var(--line); background: rgb(244 236 227 / 96%);
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: box-shadow .2s ease;
 }
 .site-header.is-scrolled { box-shadow: 0 8px 24px rgb(30 30 30 / 8%); }
 .wordmark { display: flex; align-items: center; gap: 1.15rem; min-width: 0; text-decoration: none; }
-.wordmark img { width: 11.75rem; height: auto; }
+.wordmark img { width: 11.75rem; height: auto; mix-blend-mode: multiply; }
 .wordmark__secondary { padding-left: 1.15rem; border-left: 1px solid var(--line); font-size: var(--type-small); font-weight: 600; white-space: nowrap; }
 .site-nav { display: flex; align-items: center; gap: clamp(1.15rem, 2.4vw, 2.5rem); }
 .site-nav a { position: relative; padding: .45rem 0; font-size: var(--type-small); font-weight: 700; text-decoration: none; white-space: nowrap; }
@@ -74,7 +74,7 @@ address { font-style: normal; }
 /* Submission summary */
 .submission {
   display: grid; grid-template-columns: minmax(18rem, .72fr) minmax(30rem, 1.28fr); margin-top: 0; padding-top: .8rem; padding-bottom: .8rem;
-  border: 1px solid var(--line); border-left: .35rem solid var(--sage); background: var(--surface);
+  border: 1px solid var(--line-dark); border-left: .35rem solid var(--sage); background: var(--surface); box-shadow: 0 .7rem 1.8rem rgb(30 30 30 / 6%);
 }
 .submission__intro { padding: .7rem clamp(1.5rem, 3vw, 2.75rem) .7rem 0; border-right: 1px solid var(--line); }
 .submission h2 { margin: .4rem 0 0; font: 400 var(--type-section)/1 var(--serif); letter-spacing: -.035em; }
