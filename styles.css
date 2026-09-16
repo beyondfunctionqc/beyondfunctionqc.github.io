@@ -81,7 +81,6 @@ address { font-style: normal; }
 .keynote { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 2.5rem; align-items: start; padding-top: calc(var(--section-space) * .67); }
 .keynote__portrait { margin: 0; }
 .keynote__portrait img { width: 100%; height: auto; }
-.keynote__portrait figcaption { margin-top: .5rem; color: var(--muted); font-size: var(--type-small); }
 .keynote__copy h2 { margin: .4rem 0; font: 400 var(--type-section)/1.1 var(--serif); letter-spacing: -.035em; }
 .keynote__copy p:not(.section-index) { max-width: 65ch; margin: .55rem 0 0; line-height: 1.65; }
 .keynote__affiliation { font-weight: 700; }
