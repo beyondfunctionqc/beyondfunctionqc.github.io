@@ -72,6 +72,20 @@ address { font-style: normal; }
 .conference__art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; }
 
 /* Submission summary */
+.conference-keynote { display: grid; gap: .15rem; margin: 1.5rem 0 0; }
+.conference-keynote > span { color: var(--ink); font-size: var(--type-body); font-weight: 400; line-height: 1.48; }
+.conference-keynote > span:first-child { color: var(--muted); font-size: var(--type-small); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.conference-keynote a { font-weight: 700; text-underline-offset: .2em; text-decoration-color: var(--link-underline); }
+
+/* Keynote speaker */
+.keynote { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 2.5rem; align-items: start; padding-top: calc(var(--section-space) * .67); }
+.keynote__portrait { margin: 0; }
+.keynote__portrait img { width: 100%; height: auto; }
+.keynote__portrait figcaption { margin-top: .5rem; color: var(--muted); font-size: var(--type-small); }
+.keynote__copy h2 { margin: .4rem 0; font: 400 var(--type-section)/1.1 var(--serif); letter-spacing: -.035em; }
+.keynote__copy p:not(.section-index) { max-width: 65ch; margin: .55rem 0 0; line-height: 1.65; }
+.keynote__affiliation { font-weight: 700; }
+
 .submission {
   display: grid; grid-template-columns: minmax(18rem, .72fr) minmax(30rem, 1.28fr); margin-top: 0; padding-top: .8rem; padding-bottom: .8rem;
   border: 1px solid var(--line-dark); border-left: .35rem solid var(--sage); background: var(--surface); box-shadow: 0 .7rem 1.8rem rgb(30 30 30 / 6%);
@@ -96,6 +110,7 @@ address { font-style: normal; }
 
 /* Call for papers */
 .call { padding-top: var(--section-space); padding-bottom: var(--section-space); border-bottom: 1px solid var(--line); }
+.keynote + .call { padding-top: calc(var(--section-space) * .67); }
 .section-heading h2, .organizer h2 { margin: .8rem 0 0; font: 400 var(--type-section)/1 var(--serif); letter-spacing: -.04em; }
 .section-heading h2 { max-width: 15ch; }
 .call__body { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2rem, 5vw, 5rem); margin-top: 2.15rem; }
@@ -128,7 +143,7 @@ address { font-style: normal; }
 :focus-visible { outline: 3px solid var(--sage); outline-offset: 3px; }
 
 /* Responsive navigation */
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .menu-toggle { z-index: 2; display: flex; align-items: center; gap: .7rem; padding: .5rem 0 .5rem .5rem; border: 0; color: var(--ink); background: transparent; font: 800 var(--type-small)/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
   .menu-toggle__icon { display: grid; gap: .38rem; width: 1.5rem; }
   .menu-toggle__icon i { display: block; height: 2px; background: currentColor; transition: transform .2s ease; }
@@ -184,6 +199,8 @@ address { font-style: normal; }
   .submission__details { padding-top: 1rem; padding-bottom: .7rem; }
   .guidelines > div { grid-template-columns: 7.15rem 1fr; gap: .7rem; }
   .submission__email p { width: 100%; }
+  .keynote { grid-template-columns: 1fr; gap: 1.25rem; }
+  .keynote__portrait { width: 9rem; }
   .call, .themes, .organizer { padding-top: 3.5rem; padding-bottom: 3.5rem; }
   .call__body p { line-height: 1.68; }
   .topic-list { margin-top: 1.5rem; }
