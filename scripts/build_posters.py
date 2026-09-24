@@ -112,11 +112,11 @@ def letter():
 
     p.rect(0, 402, 612, 64, SAGE)
     p.text('DATE AND TIME', 31, 414, 7.2, 'Bold', '#ffffff')
-    p.text('NOVEMBER 12, 2026', 31, 432, 16, 'Bold', '#ffffff')
+    p.text('NOVEMBER 12, 2026', 31, 432, 14, 'Bold', '#ffffff')
     p.text('8:30 AM - 8:30 PM', 31, 445, 10, color='#ffffff')
     p.text('LOCATION', 313, 414, 7.2, 'Bold', '#ffffff')
-    p.text('QUEENS COLLEGE, CUNY', 313, 432, 16, 'Bold', '#ffffff')
-    p.text('Dining Hall 120 & 122 (Q-side)', 313, 445, 10, color='#ffffff')
+    p.text('Dining Hall 120 & 122 (Q-side)', 313, 432, 14, 'Bold', '#ffffff')
+    p.text('Queens College, CUNY', 313, 445, 10, color='#ffffff')
     p.text('65-30 Kissena Boulevard, Flushing, NY 11367', 313, 458, 10, color='#ffffff')
 
     # Align the portrait to the label's cap height, not its baseline.
@@ -166,11 +166,11 @@ def tabloid():
 
     p.rect(0, 634, 792, 80, SAGE)
     p.text('DATE AND TIME', 49, 649, 9.2, 'Bold', '#ffffff')
-    p.text('NOVEMBER 12, 2026', 49, 672, 20, 'Bold', '#ffffff')
+    p.text('NOVEMBER 12, 2026', 49, 672, 18, 'Bold', '#ffffff')
     p.text('8:30 AM - 8:30 PM', 49, 688, 12.5, color='#ffffff')
     p.text('LOCATION', 414, 649, 9.2, 'Bold', '#ffffff')
-    p.text('QUEENS COLLEGE, CUNY', 414, 672, 20, 'Bold', '#ffffff')
-    p.text('Dining Hall 120 & 122 (Q-side)', 414, 688, 12.5, color='#ffffff')
+    p.text('Dining Hall 120 & 122 (Q-side)', 414, 672, 18, 'Bold', '#ffffff')
+    p.text('Queens College, CUNY', 414, 688, 12.5, color='#ffffff')
     p.text('65-30 Kissena Boulevard, Flushing, NY 11367', 414, 704, 12.5, color='#ffffff')
 
     p.image(ROOT/'assets/john-davenport.jpg', 49, 735, 90, 90)
